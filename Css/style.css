@@ -1,0 +1,181 @@
+:root{
+    --blue:#176B87;
+    --lightblue:#64CCC5;
+    --white:#DAFFFB;
+}
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../media/food.jpg');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    color:white;
+} 
+header a{
+    text-decoration: none;
+    color:var(--blue);
+    min-width: 187px;
+}
+header{
+    display:flex; 
+    padding:1em;
+    flex-wrap:wrap;
+    row-gap: 1em;;
+}
+header h2 i,nav i{
+    margin:8px;
+}
+#logo{
+    flex:3;
+    font-size: 2.5em;
+    min-width:285px;
+}
+nav{
+    flex:2;
+    display:flex;
+    align-items: center;
+    
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color:rgb(248, 164, 7);
+}
+.maintext{
+    display:flex;
+    flex-direction: column;
+    padding: 2em;
+    height:40vh;
+    justify-content: center;
+    
+}
+.tagline1{
+    color:var(--lightblue);
+    font-size: 2.5em;
+    font-weight:bolder;
+}
+.tagline2{
+    color:var(black);
+    font-weight: bold;
+    font-size:1.2em;
+}
+.maintext div{
+    margin:5px;
+}
+button{
+    width:20vw;
+    padding:10px;
+    border-radius:10px;
+    background-color: var(--lorange);
+    color:var(--blue);
+    font-style: italic;
+    font-weight: bolder;
+    font-size:1.3em;
+    border:2px solid var(--blue);
+}
+.menu{
+    color:var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    background:linear-gradient(to right,rgb(13, 11, 11),rgb(18, 18, 86))
+}
+#locheading,#menuheading{
+    color:var(--white);
+    background:linear-gradient(to left,rgb(13, 11, 11),var(--blue));
+    font-size: 2em;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+
+}
+.menu th{
+    font-size: 1.5em;
+    color:var(--lightblue);   
+}
+table{
+    width:100%;
+    padding:1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self:left;
+}
+.menu td:nth child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row:span 2;
+}
+.locations{
+    background:linear-gradient(to right,rgb(13, 11, 11),rgb(18, 18, 86));
+    color:var(--white);
+    display: flex;
+    text-align:center;
+    flex-wrap:wrap;
+    
+}
+.locations h2{
+    color:var(--lightblue);
+    padding:10px;
+}
+.locations div{
+    flex:1;
+    padding:1.5em;
+    min-width:270px;
+}
+footer{
+    background-color: black;
+    color:var(--white);
+}
+#copyright{
+    margin-left:20px;
+}
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+.social-menu ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 15px;
+}
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height:40px;
+    transition:.4s;
+    color:black;
+}
+.social-menu ul li .fab:hover{
+    color:#fff;
+}
+.social-menu ul li a{
+    position: relative;
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: #fff;
+    text-align: center;
+    transition:.6s;
+}
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color:#4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
